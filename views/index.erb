@@ -1,0 +1,11 @@
+
+<h2>Available Links</h2>
+<ul class="links">
+<% @links.each do |link| %>
+  <li>
+    <a href="/<%= link.code %>"><%= link.code %></a>
+  </li>
+<% end %>
+</ul>
+
+<a href="<%= url('/new') %>">Create new &rarr;</a>
